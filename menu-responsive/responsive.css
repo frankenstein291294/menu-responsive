@@ -1,0 +1,39 @@
+/* media queries para 992px */
+@media ( min-width:992px ) {
+	.header-bottom  .menu {
+		height:auto !important;
+	}
+}
+
+
+@media ( max-width:992px ) {
+	.header-bottom .menu-mobile {
+		display:block;
+	}
+
+	.header-bottom .menu {
+		position:absolute;
+		background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+		text-align:center;
+		top:100%;
+		/* left:-10%; */
+		width:100%;
+		height:0;
+		margin-bottom:10px;
+		border-top:2px solid rgba(255,255,255,.7);
+		
+	}
+	.header-bottom .menu li {
+		position:relative;
+		display:block;
+	}
+	.header-bottom .menu li:before {
+		position:absolute;
+		bottom:-5px;
+		left:50%;
+		content:'~';
+		font-size:1.4rem;
+		color:#fff;
+		transform:translateX(-50%);
+	}
+}
